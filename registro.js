@@ -21,3 +21,5 @@ btnSignUp.addEventListener('click', e => {
     });
   promise.catch(e => console.log(e.message));
 });
+
+    
