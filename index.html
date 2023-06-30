@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Fullstack Test App</title>
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    
+  <h1>Fullstack Test App</h1>
+
+  <h2>Sign Up</h2>
+  <form id="signup-form">
+    <input type="text" id="signup-username" placeholder="Username">
+    <input type="email" id="signup-email" placeholder="Email">
+    <input type="password" id="signup-password" placeholder="Password">
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <h2>Log In</h2>
+  <form id="login-form">
+    <input type="text" id="login-username" placeholder="Username">
+    <input type="password" id="login-password" placeholder="Password">
+    <button type="submit">Log In</button>
+  </form>
+
+  <h2>Upload Data</h2>
+  <form id="upload-form">
+    <input type="file" id="csv-file" accept=".csv">
+    <button type="submit">Upload</button>
+  </form>
+
+  <h2>Data</h2>
+  <div id="data-container"></div>
+
+  <script src="./index.js"></script>
+
 </body>
 </html>
